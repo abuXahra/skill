@@ -1,5 +1,4 @@
 import React from 'react'
-import PageTitle from "../../pageTitle.json";
 
 function Important() {
     return (

@@ -17,8 +17,12 @@ import Header from "./components/inc/Header";
 import Important from "./components/pages/Important";
 import Instrument from "./components/pages/Instrument";
 import Workplace from "./components/pages/Workplace";
+import WebsiteDesign from "./components/pages/WebsiteDesign";
+import Digital from "./components/pages/Digital";
+import Graphics from "./components/pages/Graphics";
 
 function App() {
+
   return (
     <Router>
       <Header />
@@ -31,6 +35,9 @@ function App() {
         <Route exact path='/important-of-skill-acquisition' element={<Important />}></Route>
         <Route exact path='/skill-is-a-powerful-instrument' element={<Instrument />}></Route>
         <Route exact path='/lack-of-skill-in-a-workplace' element={<Workplace />}></Route>
+        <Route exact path='/website-design' element={<WebsiteDesign />}></Route>
+        <Route exact path='/digital-marketing' element={<Digital />}></Route>
+        <Route exact path='/graphics-design' element={<Graphics />}></Route>
       </Routes>
       <Footer />
     </Router >

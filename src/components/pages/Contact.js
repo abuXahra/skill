@@ -1,5 +1,5 @@
 import React from "react";
-import PageTitle from "../../pageTitle"
+import PageTitle from "../jsonfiles/pageTitle.json"
 import Button from "../inc/Button";
 
 function Contact() {

@@ -1,7 +1,7 @@
 import React from "react";
 import SkillAcq from "../images/skillack.png";
 import SkillAcq2 from "../images/3.jpg";
-import PageTitle from "../../pageTitle.json";
+import PageTitle from "../jsonfiles/pageTitle.json";
 import Vmc from "./inc/Vmc";
 
 function About() {

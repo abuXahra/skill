@@ -1,5 +1,7 @@
+import Button from './Button'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import PdfFile from '../pdf/Why-is-Skill-Acquisition-important-in-Nigeria.pdf'
 
 const Navbar = () => {
     return (
@@ -26,12 +28,14 @@ const Navbar = () => {
                             </li>
                             <li class="nav-item dropdown">
                                 <Link class="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Download
+                                    Downloads
                                 </Link>
                                 <ul class="dropdown-menu float-end" aria-labelledby="navbarDropdown">
-                                    <li><Link class="dropdown-item" to="#">Download Skill App</Link></li>
+
+                                    <a href={PdfFile} className="downloadable">Skill Guide</a>
                                     <li><hr class="dropdown-divider" /></li>
-                                    <li><Link class="dropdown-item" to="#">Donwload Skill PDF</Link></li>
+                                    <a href={"https://play.google.com/store/apps/details?id=com.islam.skill"} className="downloadable">Skill App</a>
+
                                 </ul>
                             </li>
                         </ul>

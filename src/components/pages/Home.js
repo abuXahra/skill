@@ -10,6 +10,7 @@ import Website from '../images/website.jpg'
 import Digital from '../images/digital.jpg'
 import Graphics from '../images/graphics.jpg'
 import Reachout from '../images/reachout.png'
+import { Link } from "react-router-dom";
 
 
 const about = "/about";

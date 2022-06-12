@@ -69,3 +69,19 @@
   background-color: #f76c2f;
   border-radius: 10px;
 }
+
+
+.downloadable {
+  color: #000;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.downloadable:hover {
+  color: #000;
+}
+
+/* boostrap dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}

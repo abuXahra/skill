@@ -18,6 +18,36 @@ const readMore = "Read more";
 
 
 function Home() {
+
+
+
+    const cardContnets = [
+        {
+            cardImg: Website,
+            cardTitle: "Website Design",
+            cartBody: "There are many factors that designers should consider when designing a website, especially basic psychological factors that make people believe that the company is credible. Companies have to sell themselves to earn the trust of potential customers or visitors, so a good website design and user experience will persuade people to have an association.",
+            buttonText: "Read more",
+            buttonUr: "/website-design"
+        },
+        {
+            cardImg: Graphics,
+            cardTitle: "Graphics Design",
+            cartBody: "Graphic design is the profession and academic discipline whose activity consists in projecting visual communications intended to transmit specific messages to social groups, with specific objectives. Design is based on the principle of \"form follows a specific function",
+            buttonText: "Read more",
+            buttonUr: "/graphics-design"
+        },
+        {
+
+            cardImg: Digital,
+            cardTitle: "Digital Marketing",
+            cartBody: " Any marketing that uses electronic devices and can be used by marketing specialists to convey promotional messaging and measure its impact through your customer journey. In practice, digital marketing typically refers to marketing campaigns that appear on a computer, phone, tablet, or other device. It can take many forms, including online video, display ads, search engine marketing, paid social ads and social media posts. Digital marketing is often compared to “traditional marketing” such as magazine ads, billboards, and direct mail. Oddly, television is usually lumped in with traditional marketing",
+            buttonText: "Read more",
+            buttonUr: "/digital-marketing"
+        }
+    ]
+
+
+
     return (
         <div>
             <Slider />
@@ -107,33 +137,18 @@ function Home() {
                             <div className="underline mb-4 mx-auto"></div>
                             <div className="my-5"></div>
                             <div className='row'>
-                                {/* setvice 1  */}
-                                <CardComponent
-                                    cardImg={Website}
-                                    cardTitle={"Website Design"}
-                                    cartBody={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat recusandae animi blanditiis delectus! Quidem impedit"}
-                                    buttonText={"Read more"}
-                                    buttonUr={"/website-design"}
-                                />
-
-
-                                {/* service 2 */}
-                                <CardComponent
-                                    cardImg={Graphics}
-                                    cardTitle={"Graphics Design"}
-                                    cartBody={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat recusandae animi blanditiis delectus! Quidem impedit"}
-                                    buttonText={"Read more"}
-                                    buttonUr={"/graphics-design"}
-                                />
-
-                                {/* service 3 */}
-                                <CardComponent
-                                    cardImg={Digital}
-                                    cardTitle={"Digital Marketing"}
-                                    cartBody={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat recusandae animi blanditiis delectus! Quidem impedit"}
-                                    buttonText={"Read more"}
-                                    buttonUr={"/digital-marketing"}
-                                />
+                                {/* setvices components*/}
+                                {
+                                    cardContnets.map((cardContnet) => (
+                                        <CardComponent
+                                            cardImg={cardContnet.cardImg}
+                                            cardTitle={cardContnet.cardTitle}
+                                            cartBody={cardContnet.cartBody.substring(0, 195) + "..."}
+                                            buttonText={cardContnet.buttonText}
+                                            buttonUr={cardContnet.buttonUr}
+                                        />
+                                    ))
+                                }
                             </div>
                         </div>
                     </div>

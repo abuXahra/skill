@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, {useEffect} from "react";
 import "./App.css";
 import Navbar from "./components/inc/Navbar";
 import Home from "./components/pages/Home";
@@ -22,7 +22,10 @@ import Digital from "./components/pages/Digital";
 import Graphics from "./components/pages/Graphics";
 
 function App() {
-
+ useEffect(() => {
+   window.scrollTo(0, 0);
+ }, [])
+ 
   return (
     <Router>
       <Header />

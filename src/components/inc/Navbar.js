@@ -20,9 +20,9 @@ const Navbar = () => {
                             <li class="nav-item">
                                 <Link class="nav-link" to="/about">About</Link>
                             </li>
-                            <li class="nav-item">
+                            {/* <li class="nav-item">
                                 <Link class="nav-link" to="/services">Services</Link>
-                            </li>
+                            </li> */}
                             <li class="nav-item">
                                 <Link class="nav-link" to="/contact" tabindex="-1" aria-disabled="true">Contact Us</Link>
                             </li>

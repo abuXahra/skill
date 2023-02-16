@@ -27,9 +27,9 @@ const Footer = () => {
                         <h6>Contact Info</h6>
                         <hr />
                         <div>Plot 107, Jeguin Estate, Mabushi, Abuja, Nigeria</div>
-                        <div>+2348100xxxx00</div>
-                        <div>+2348100xxxx00</div>
-                        <div>email@domain.com</div>
+                        <div>+2348135701458</div>
+                        <div>+2349055001663</div>
+                        <div>skill@gmail.com</div>
                     </div>
                     <div className="col-md-3">
                         <h6>Download</h6>

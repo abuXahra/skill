@@ -34,26 +34,23 @@ function Contact() {
                                 //netlify-honeypot="bot-field" 
                                 data-netlify="true"
                                 onSubmit="submit">
-                                <div class="mb-3" hidden aria-hidden="true">
-                                    {/*hidden field bot-field*/}
-                                    <input type="bot-field" class="form-control" />
-                                </div>
+
                                 <div class="mb-3">
                                     {/* <label for="userName" class="form-label">Email address</label> */}
-                                    <input type="name" class="form-control" name="full-name" required placeholder="Full Nname" />
+                                    <input type="name" class="form-control" id="full-name" name="full-name" required placeholder="Full Nname" />
                                 </div>
                                 <div class="mb-3">
                                     {/* <label for="userEmail" class="form-label">Email address</label> */}
-                                    <input type="email" class="form-control" name="email" required placeholder="name@example.com" />
+                                    <input type="email" class="form-control" id="email" name="email" required placeholder="name@example.com" />
                                 </div>
                                 <div class="mb-3">
                                     {/* <label for="userEmail" class="form-label">Email address</label> */}
-                                    <input type="text" class="form-control" name="number" required placeholder="number" />
+                                    <input type="text" class="form-control" name="number" id="number" required placeholder="number" />
                                 </div>
 
                                 <div class="mb-3">
                                     {/* <label for="userMessage" class="form-label">Example textarea</label> */}
-                                    <textarea class="form-control" name="message" rows="3" required placeholder="message"></textarea>
+                                    <textarea class="form-control" name="message" id="message" rows="3" required placeholder="message"></textarea>
                                 </div>
                                 <button type="submiy">Send</button>
                                 {/* <Button buttonText={"Submit"} buttonUrl={""} /> */}

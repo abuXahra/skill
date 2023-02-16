@@ -29,7 +29,11 @@ function Contact() {
                             <div>skill@gmail.com</div>
                         </div>
                         <div className="col-sm-6 my-auto">
-                            <form action="/" method="post">
+                            <form name="conatus" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                                <div class="mb-3" hidden aria-hidden="true">
+                                    {/*hidden field bot-field*/}
+                                    <input type="bot-field" class="form-control" />
+                                </div>
                                 <div class="mb-3">
                                     {/* <label for="userName" class="form-label">Email address</label> */}
                                     <input type="name" class="form-control" id="userName" required placeholder="Full Nname" />

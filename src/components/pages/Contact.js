@@ -29,29 +29,34 @@ function Contact() {
                             <div>skill@gmail.com</div>
                         </div>
                         <div className="col-sm-6 my-auto">
-                            <form name="conatus" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                            <form
+                                name="contact"
+                                //netlify-honeypot="bot-field" 
+                                data-netlify="true"
+                                onSubmit="submit">
                                 <div class="mb-3" hidden aria-hidden="true">
                                     {/*hidden field bot-field*/}
                                     <input type="bot-field" class="form-control" />
                                 </div>
                                 <div class="mb-3">
                                     {/* <label for="userName" class="form-label">Email address</label> */}
-                                    <input type="name" class="form-control" id="userName" required placeholder="Full Nname" />
+                                    <input type="name" class="form-control" name="full-name" required placeholder="Full Nname" />
                                 </div>
                                 <div class="mb-3">
                                     {/* <label for="userEmail" class="form-label">Email address</label> */}
-                                    <input type="email" class="form-control" id="userEmail" required placeholder="name@example.com" />
+                                    <input type="email" class="form-control" name="email" required placeholder="name@example.com" />
                                 </div>
                                 <div class="mb-3">
                                     {/* <label for="userEmail" class="form-label">Email address</label> */}
-                                    <input type="text" class="form-control" id="userEmail" required placeholder="number" />
+                                    <input type="text" class="form-control" name="number" required placeholder="number" />
                                 </div>
 
                                 <div class="mb-3">
                                     {/* <label for="userMessage" class="form-label">Example textarea</label> */}
-                                    <textarea class="form-control" id="userMessage" rows="3" required placeholder="message"></textarea>
+                                    <textarea class="form-control" name="message" rows="3" required placeholder="message"></textarea>
                                 </div>
-                                <Button buttonText={"Submit"} buttonUrl={""} />
+                                <button type="submiy">Send</button>
+                                {/* <Button buttonText={"Submit"} buttonUrl={""} /> */}
                             </form>
                         </div>
                     </div>
